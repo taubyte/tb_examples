@@ -1,0 +1,16 @@
+id: QmbKMKordFdRBkLZv2XtJqPfXa1cqm5Hx4FrsNM6azskhC
+description: Generate an avatar using o1egl/govatar
+tags: []
+trigger:
+    type: https
+    method: GET
+    paths:
+        - /goavatar
+domains:
+    - avatar_domain
+includes:
+    - /avatar_backend/functions/goavatar.go
+execution:
+    timeout: 10s
+    memory: 10MB
+    call: avatar
