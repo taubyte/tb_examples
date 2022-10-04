@@ -5,7 +5,7 @@ trigger:
     type: https
     method: GET
     paths:
-        - /
+        - /test
 domains:
     - generated
 includes:
